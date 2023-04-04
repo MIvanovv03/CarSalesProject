@@ -1,2 +1,2 @@
-### msi
-## bobi 
+## The project uses database and if you want to run it properly you have to setup the database MySQL driver!
+### Due to the advancement of technology and the development of websites, many people prefer e-commerce nowadays. Today, Web-sites are expected to contain a lot of information and have a good presentation, but not distracting with difficult and clumsy interface. The information in it should be easily discoverable and current. A clear and dynamic Web site is of great value to the user who wants to quickly and easily reach the desired information. This is precisely the purpose of make an e-store where users can browse up-to-date ads, but at the same time be able to add their own.The app is made with some of the most famous and modern web development technologies such as: php, javascript , html, css to be both innovative.
