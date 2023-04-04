@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add Car</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div id="menu-btn" class="fas fa-bars"></div>
+
+			<a href="index.html" class="logo"> <span>GT</span>cars </a>
+
+			<nav class="navbar">
+				<a href="index.html">home</a>
+				<a href="second.html">Search</a>
+			</nav>
+
+			<div id="login-btn">
+				<button class="btn" type="submit">login</button>
+				<i class="far fa-user"></i>
+			</div>
+		</header>
+
+		<form id="addCarForm">
+			<div class="form-control">
+				<label for="brand">Brand</label>
+				<input
+					type="text"
+					name="brand"
+					placeholder="Brand"
+					class="box brand"
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label for="model">Model</label>
+				<input type="text" placeholder="Model" class="box model" required />
+			</div>
+			<div class="form-control">
+				<label for="year">Year</label>
+				<input
+					type="number"
+					min="1900"
+					name="year"
+					max="2022"
+					step="1"
+					value="2000"
+					class="box year"
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label for="price">Price</label>
+				<input type="text" placeholder="Price" class="box price" required />
+			</div>
+			<div class="form-control">
+				<label for="sellerName">Seller Name</label>
+				<input
+					type="text"
+					placeholder="sellerName"
+					class="box sellerName"
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label for="region">Region</label>
+				<input
+					type="text"
+					name="region"
+					placeholder="Region"
+					class="box region"
+					required
+				/>
+			</div>
+
+			<div class="form-control" id="registrationNumber">
+				<div id="checkbox">
+					<label for="isReg">Is Registered</label>
+					<input type="checkbox" name="isReg" class="box isRegistered" />
+				</div>
+			</div>
+			<div class="form-control">
+				<label for="telephone">Telephone Number</label>
+				<input
+					type="tel"
+					name="telephone"
+					class="box telephone"
+					placeholder="08XXXXXXXX"
+					maxlength="10"
+					pattern="[0-9]{10}"
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label for="mileage">Mileage</label>
+				<input
+					type="text"
+					name="mileage"
+					placeholder="Mileage"
+					class="box mileage"
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label for="gasType">Gas Type</label>
+				<select name="gasType" class="box gasType" required>
+					<option value="Дизел">Дизел</option>
+					<option value="Бензин">Бензин</option>
+					<option value="Газ/Бензин">Газ/Бензин</option>
+					<option value="Хибрид">Хибрид</option>
+					<option value="Електрически">Електрически</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label for="message">Message</label>
+				<textarea
+					placeholder="Message"
+					name="message"
+					class="box message"
+					required
+				></textarea>
+			</div>
+			<div class="form-control">
+				<input type="tel" class="box power" placeholder="Power (hp)" required />
+			</div>
+			<div class="form-control">
+				<input type="file" class="box photos" multiple required />
+			</div>
+			<div class="form-control">
+				<input type="submit" value="Post" class="btn addCar" required />
+			</div>
+		</form>
+		<div id="result"></div>
+		<script src="./addCar.js"></script>
+	</body>
+</html>
